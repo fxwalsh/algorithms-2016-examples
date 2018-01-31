@@ -17,8 +17,6 @@ public class TowersOfHanoi {
         }
 
         public static void main(String[] args) {
-                move(10 , 1, 2, 3);
+                move(10, 1, 2, 3);
         }
-
-
 }

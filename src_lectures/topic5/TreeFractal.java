@@ -1,12 +1,19 @@
 package topic5;
 
 
+import java.util.Random;
+
 import edu.princeton.cs.introcs.StdDraw;
 
 public class TreeFractal{
 public static void tree(int n, double x, double y, double a, double branchRadius) {
-    double bendAngle   = Math.toRadians(15);
-    double branchAngle = Math.toRadians(37);
+    
+	Random r = new Random();
+	
+	
+	
+	double bendAngle   = Math.toRadians(r.nextInt((25 - 10) + 1) + 10);
+    double branchAngle = Math.toRadians(r.nextInt((40 - 20) + 1) + 20);
     double branchRatio = 0.65;
 
     double cx = x + Math.cos(a) * branchRadius;
